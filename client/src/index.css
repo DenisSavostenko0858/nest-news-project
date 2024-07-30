@@ -1,0 +1,195 @@
+body{
+    background-color: rgb(50, 49, 77);
+    color: white;
+    flex-direction: column;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  .container-nav-bar{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3b3838;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+  }
+  .nav-bar-left{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-bar-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 350px;
+    justify-content: space-between;
+  }
+  .nav-bar-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 160px;
+    justify-content: space-between;
+    background-color: #242424;
+    border-radius: 15px;
+    height: 80%;
+    padding: 0 10px 0 10px;
+  }
+  .nav-bar-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav-bar-auth{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 160px;
+    justify-content: space-around;
+    background-color: #242424;
+    border-radius: 15px;
+    height: 80%;
+  }
+  .input-search{
+    border-radius: 15px;
+    border: none;
+    width: 160px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  .container-profile{
+    background-color: #3b3838;
+    border-radius: 15px;
+    padding: 5px 20px 50px 20px;
+  }
+  .btn-admin-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+  .btn-admin{
+    background-color: #242424;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.2s;
+  }
+  .btn-admin:hover{
+    background-color: #3b3838;
+    transition: 0.2s;
+  }
+  .container-admin-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b3838;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  .form-add-movie{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+  .input-add-movie{
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #242424;
+    color: #ffffff;
+    border: none;
+    outline:none;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .input-add-movie:hover{
+    background-color: #565252;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .btn-admin-panel{
+    background-color: #242424;
+    color: #ffffff;
+    padding: 10px;
+    width: 60%;
+    border-radius: 15px;
+    transition: 0.2s;
+    border: none;
+  }
+  .btn-admin-panel:hover{
+    background-color: red;
+    transition: 0.2s;
+  }
+  .form-auth{
+    width: 600px;
+    background-color: #3b3838;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+  }
+  .input-auth{
+    width: 600px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #242424;
+    color: #ffffff;
+    border: none;
+    outline:none;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .btn-auth{
+    background-color: #242424;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    transition: 0.2s;
+  }
+  .btn-auth:hover{
+    background-color: rgb(117, 117, 245);
+    transition: 0.2s;
+  }
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
