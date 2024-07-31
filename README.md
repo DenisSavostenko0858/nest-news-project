@@ -1,1 +1,1 @@
-## NestJS + Vite ReactTS + PostgreSQL + Sequelize
+## NestJS + Vite ReactTS + PostgreSQL + Redis + Sequelize
