@@ -7,12 +7,15 @@ npm run test
 npm run start
 
 ## Vite React 
-npm run dev  Весь функционал также был реализован и на Client-части. 
+npm run dev
+
+Весь функционал также был реализован и на Client-части. 
 
 ## Api для работы с Postman
 
 ### Статьи
 - Добавление статьи
+  
 POST: http://localhost:5000/api/news/create
 
  -Пример запроса JSON:
@@ -26,18 +29,23 @@ POST: http://localhost:5000/api/news/create
 ```
 
 - Получение всех статей
+  
 GET: http://localhost:5000/api/news/list
 
 - Получение статей по автору
+  
 GET: http://localhost:5000/api/news/list/author/:authorId
 
 - Получение статей по названию статьи
+  
 GET: http://localhost:5000/api/news/list/name/:name
 
 - Получение статьи по id
+  
 GET: http://localhost:5000/api/news/:id
 
 - Изменение статьи по id
+  
 PATCH: http://localhost:5000/api/news/:id
  
  -Пример запроса JSON:
@@ -50,10 +58,12 @@ PATCH: http://localhost:5000/api/news/:id
 }
 ```
 - Удаление статьи по id
+  
 DELETE: http://localhost:5000/api/news/:id
 
 ### Пользователи
 - Register
+  
 POST: http://localhost:5000/api/users/register
 
  -Пример запроса JSON:
@@ -71,6 +81,7 @@ POST: http://localhost:5000/api/users/register
 }
 ```
 - Login
+  
 POST: http://localhost:5000/api/users/login
 
  -Пример запроса JSON:
@@ -87,6 +98,7 @@ POST: http://localhost:5000/api/users/login
 }
 ```
 - Auth (проверка токена)
+  
 POST: http://localhost:5000/api/users/auth
 
  -Пример запроса JSON:
