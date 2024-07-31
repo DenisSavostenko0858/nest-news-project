@@ -2,7 +2,7 @@ import { useState, useContext } from 'react';
 import { observer } from 'mobx-react-lite';
 import { create } from '../http/newsAPI';
 import { Context } from '../main';
-import NewsList from '../components/NewsList';
+import NewsListEddit from '../components/NewsListEddit';
 
 const News = observer(() => {
     const context = useContext(Context);
@@ -28,7 +28,7 @@ const News = observer(() => {
             <div className='news'>
                 <h1>Новости</h1>
                 <h2>Статьи:</h2>
-                <NewsList/>
+                <NewsListEddit/>
             </div>
             <div className='container-news'>
                 <h3>Добавить статью</h3>

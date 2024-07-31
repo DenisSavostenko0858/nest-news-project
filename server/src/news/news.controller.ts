@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Query } from '@nestjs/common';
 import { NewsService } from './news.service';
 import { CreateNewsDto } from './dto/create-news.dto';
 import { UpdateNewsDto } from './dto/update-news.dto';
@@ -13,8 +13,21 @@ export class NewsController {
   }
 
   @Get('/list')
-  findAll() {
-    return this.newsService.findAll();
+  async findAll(
+    @Query('authorId') authorId?: string,
+    @Query('name') name?: string,
+    @Query('page') page: number = 1,
+  ) {
+    const itemsPerPage = 10; 
+    const news = await this.newsService.findAll({ authorId, name, page, itemsPerPage });
+    
+    const totalItems = await this.newsService.count({ authorId, name });
+    const totalPages = Math.ceil(totalItems / itemsPerPage); 
+
+    return {
+      items: news,
+      totalPages,
+    };
   }
 
   @Get('/list/author/:authorId')
