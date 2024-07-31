@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { RegisterUserDto} from './dto/register-user.dto';
 import { LoginUserDto} from './dto/login-user.dto';
+import { CheckUserDto } from './dto/cheak-user.dto';
 import { User } from '../../models/database_model'; 
 import * as bcrypt from 'bcrypt';
 import * as jwt from 'jsonwebtoken';
@@ -42,6 +43,20 @@ export class UsersService {
     const token = this.generateJwt(user.id, user.email, user.role);
 
     return { token };
+}
+
+async checkUser(checkUserDto: CheckUserDto) {
+  const { id, email, role } = checkUserDto;
+  
+  const user: any = await User.findOne({ where: { id, email, role } });
+  
+  if (!user) {
+    throw new Error('Пользователь не найден');
+  }
+
+  const token = this.generateJwt(user.id, user.email, user.role);
+  
+  return { token };
 }
 
   private generateJwt(id: number, email: string, role: string): string {

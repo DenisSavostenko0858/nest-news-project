@@ -30,7 +30,8 @@ const Auth = observer(() => {
       }
 
     return(
-        <div className="container-auth">
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+            <div className="container-auth">
                 <div className='form-auth'>
                     <h2 style={{ margin: 'auto' }}>{isLogin ? 'Авторизация' : "Регистрация"}</h2>
                     <div style={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>
@@ -76,6 +77,7 @@ const Auth = observer(() => {
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     )
 })

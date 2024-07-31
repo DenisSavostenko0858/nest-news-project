@@ -21,7 +21,7 @@ const App = observer(() => {
   }, []);
 
   if (loading){
-    return <div style={{marginTop: '100px'}}>Loading...</div>
+    return <div style={{marginTop: '28%', marginLeft: '48%', fontSize: '24px'}}>Loading...</div>
   }
 
   return (
