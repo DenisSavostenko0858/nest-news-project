@@ -1,4 +1,4 @@
-### Nest + Vite ReactTS + PostgreSQL + Redis + Sequelize
+## Nest + Vite ReactTS + PostgreSQL + Redis + Sequelize
 
 ## Jest тестирование
 npm run test
@@ -11,7 +11,7 @@ npm run dev
 
 ## Api для работы с Postman
 
-# Статьи
+### Статьи
 - Добавление статьи
 POST: http://localhost:5000/api/news/create
 
@@ -49,7 +49,7 @@ PATCH: http://localhost:5000/api/news/:id
 - Удаление статьи по id
 DELETE: http://localhost:5000/api/news/:id
 
-# Пользователи
+### Пользователи
 - Register
 POST: http://localhost:5000/api/users/register
 
