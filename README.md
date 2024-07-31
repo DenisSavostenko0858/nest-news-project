@@ -7,8 +7,7 @@ npm run test
 npm run start
 
 ## Vite React 
-npm run dev
-Весь функционал также был реализован и на Client-части. 
+npm run dev  Весь функционал также был реализован и на Client-части. 
 
 ## Api для работы с Postman
 
